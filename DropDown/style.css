@@ -1,0 +1,72 @@
+
+/* DROPDOWN MENU */
+
+.header-bottom-area li {
+    position: relative;
+}
+.header-bottom-area li ul {
+    background: #000 none repeat scroll 0 0;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    z-index: 99;
+}
+.header-bottom-area li ul li {
+    display: block;
+}
+.header-bottom-area li li a {
+    padding: 10px;
+}
+
+
+.header-bottom-area li ul ul {
+    left:  250px;
+    top: 0;
+}
+
+.header-bottom-area li:hover > ul li:hover > ul {
+    top: 0;
+    visibility:  visible;
+    opacity:  1;
+}
+
+.header-bottom-area li:hover ul li ul {
+    visibility:  hidden;
+    opacity:  0;
+}
+
+.header-bottom-area li:first-child a {
+    padding-left: 0;
+}
+.header-bottom-area li li a, .header-bottom-area li li:first-child a {
+    padding: 12px;
+    text-transform: none;
+}
+.header-bottom-area li li::after {
+    bottom: 0;
+    height: 1px;
+    top: auto;
+    width: 100%;
+}
+.header-bottom-area li li:hover > a {
+    background: #46be25 none repeat scroll 0 0;
+    color: #fff;
+}
+.header-bottom-area li:hover > a {
+    color: #46be25;
+}
+
+
+.header-bottom-area li ul {
+    opacity: .3;
+    visibility: hidden;
+    top: 57px;
+    transition: .3s;
+}
+
+.header-bottom-area li:hover ul {
+    opacity: 1;
+    visibility: visible;
+
+}
